@@ -158,14 +158,14 @@ function scoreboard(getInningScore, inning, num) {
   let away = 0;
   for(let i =0; i < inning; i++){
     getInningScore(inning);
-    scoreArray.push('Inning ${i}: Away ${away} - Home ${home}');
+    scoreArray.push(`Inning ${i}: Away ${away} - Home ${home}`);
     home = home + home;
     away = away + away;
   }
   if( home === away){
-    scoreArray.push('This game will require extra innings: Away ${away} Home ${home} ');
+    scoreArray.push(`This game will require extra innings: Away ${away} Home ${home} `);
   }else{
-    scoreArray.push('Final Score: Away: ${away} - Home: ${home}');
+    scoreArray.push(`Final Score: Away: ${away} - Home: ${home}`);
   }
   return scoreArray;
 }
