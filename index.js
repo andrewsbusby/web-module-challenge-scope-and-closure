@@ -28,11 +28,12 @@ console.log(processFirstItem(['foo','bar'],function(str){return str+str}));
   Study the code for counter1 and counter2, then answer the questions below.
   
   1. What is the difference between counter1 and counter2?
-  
+    counter 1 has a closure and a private variable. counter2 has a global veriable.
   2. Which of the two uses a closure? How can you tell?
-  
+  counter1. It has a function within a function.
   3. In what scenario would the counter1 code be preferable? In what scenario would 
      counter2 be better?  
+     counter1 is easier to read and would be better and easier for  newer developer to read and understand what is going on. counter2 is more compacted. You also have access to the count variable outside of the function if you need to access it any where else in the code. 
 */
 
 // counter1 code
@@ -62,9 +63,11 @@ Use the inning function below to do the following:
 NOTE: This will be a callback function for the tasks below
 */
 
-function inning(/*Code Here*/){
-    /*Code Here*/
+function inning(){
+    let number = Math.floor(Math.random() * 2);
+    return number;
 }
+inning();
 
 
 /* ⚾️⚾️⚾️ Task 3: finalScore() ⚾️⚾️⚾️
