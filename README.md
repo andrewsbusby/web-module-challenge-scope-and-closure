@@ -43,6 +43,7 @@ Find the file `index.js` and complete the tasks.
 Edit the `ReadMe` file with your answers.
 
 1. In your own words, define closure (1-2 sentences).
+  A closure is a function nested inside another function. The ending of the nested function is a closure.
 2. Study the following code, then answer the questions below.
 
 ```js
@@ -64,9 +65,11 @@ dansRoll();
 ```
 
 a. Where is closure used in this code? How can you tell?
+  The closure is used at teh end of the console.log invocation. It is where the nested function ends. 
 b. Compare and contrast calling `dansRoll` the first and second time. What is always the same? What could change?
+  The middle part of the string 'rooled a' is always the same. The ${name} and ${newRool} can change. The ${newRoll} can change at random to a number between 1 and 6.
 c. What is the lexical scope of `newRoll`? 
-
+  Tjhe lexical scope of 'newRool' is inside the function as well as out side where the 'dansRoll' and 'zoesRoll' are located. 
 
 ### Task 3 - Stretch Goals
 
